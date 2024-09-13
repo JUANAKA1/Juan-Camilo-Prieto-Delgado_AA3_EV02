@@ -1,0 +1,200 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Estilo del cuerpo */
+.body-admin {
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+.header-admin {
+    background-color: rgba(56, 131, 206, 0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-admin {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Navegación */
+.nav-admin {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: rgba(56, 131, 206, 0.8);
+}
+
+.menu-admin {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item-admin {
+    margin: 0;
+}
+
+.menu-link-admin {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.menu-link-admin:hover {
+    color: #f0f0f0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del main */
+.main-admin {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de formulario */
+.formulario-admin {
+    margin-bottom: 20px;
+}
+
+.subtitulo-admin {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #3883ce;
+    font-weight: 600;
+}
+
+.form-admin {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.label-admin {
+    font-size: 1.2rem;
+    margin: 20px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-admin {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-admin {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #3883ce;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-admin:hover {
+    background-color: #08136f;
+    transform: scale(1.05);
+}
+
+/* Tabla de productos */
+.productos-admin {
+    margin-top: 20px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-productos th, .tabla-productos td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.tabla-productos th {
+    background-color: #3883ce;
+    color: white;
+    font-weight: 600;
+}
+
+.tabla-productos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla-productos tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Pie de página */
+.footer-admin {
+    background-color: rgba(56, 131, 206, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-admin p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-admin {
+        flex-direction: column;
+    }
+
+    .menu-admin {
+        gap: 10px;
+    }
+
+    .menu-item-admin {
+        margin: 10px 0;
+    }
+
+    .titulo-admin {
+        font-size: 2rem;
+    }
+    .tabla-producto{
+        width: 80%;
+    }
+}
